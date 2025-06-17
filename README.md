@@ -1,17 +1,19 @@
-# React + TypeScript + Vite
+# ⚛️ React + TypeScript + Vite Template
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+This template offers a minimal and efficient setup to start building applications using **React**, **TypeScript**, and **Vite**, featuring **Hot Module Replacement (HMR)** and pre-configured **ESLint** rules.
 
-Currently, two official plugins are available:
+## 🔌 Available Official Plugins
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react/README.md) uses [Babel](https://babeljs.io/) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+You can choose between the following official plugins for fast refresh support:
 
-## Expanding the ESLint configuration
+- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react/README.md) – Uses [Babel](https://babeljs.io/) for Fast Refresh  
+- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react-swc) – Uses [SWC](https://swc.rs/) for Fast Refresh
 
-If you are developing a production application, we recommend updating the configuration to enable type aware lint rules:
+## 🧹 Expanding ESLint Configuration for Production
 
-- Configure the top-level `parserOptions` property like this:
+When building for production, it’s recommended to enable type-aware rules for stricter and more reliable linting.
+
+### ✍️ Update `parserOptions` in your ESLint config:
 
 ```js
 export default {
@@ -23,8 +25,3 @@ export default {
     tsconfigRootDir: __dirname,
   },
 }
-```
-
-- Replace `plugin:@typescript-eslint/recommended` to `plugin:@typescript-eslint/recommended-type-checked` or `plugin:@typescript-eslint/strict-type-checked`
-- Optionally add `plugin:@typescript-eslint/stylistic-type-checked`
-- Install [eslint-plugin-react](https://github.com/jsx-eslint/eslint-plugin-react) and add `plugin:react/recommended` & `plugin:react/jsx-runtime` to the `extends` list
